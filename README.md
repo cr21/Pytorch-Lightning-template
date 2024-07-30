@@ -12,3 +12,6 @@ pip install torch torchvision torchmetrics python_lightning numpy==1.26.0
 # change data directory in config.py 
 python3  main.py
 ```
+
+## Output
+![prediction-out](https://i.imgur.com/g2YtB7X.png)
