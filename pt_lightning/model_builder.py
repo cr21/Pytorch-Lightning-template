@@ -8,8 +8,8 @@ from torch.utils.data import Dataset
 
 from torchmetrics import Accuracy, F1Score
 from torchmetrics import Metric
-from metrics import MyAccuracy
-from config import LR_ADAM
+from pt_lightning.metrics import MyAccuracy
+from pt_lightning.config import LR_ADAM
 
 
 

@@ -1,13 +1,13 @@
 import os
-from model_builder import TinyVGG
+from pt_lightning.model_builder import TinyVGG
 import pytorch_lightning as pl
-from dataset import FashionDataModule
+from pt_lightning.dataset import FashionDataModule
 from torchvision import transforms
-from config import CUDA_VISIBLE_DEVICES, INPUT_CHANNEL, NUM_CLASSES,\
+from pt_lightning.config import CUDA_VISIBLE_DEVICES, INPUT_CHANNEL, NUM_CLASSES,\
                 HIDDEN_UNITS, IMG_W, IMG_H, BATCH_SIZE, NUM_WORKERS,DATA_DIR,\
                 DEVICES, MIN_EPOCH, MAX_EPOCH, ACCELERATOR
 
-from callbacks import CustomPrintCallBack
+from pt_lightning.callbacks import CustomPrintCallBack
 from pytorch_lightning.callbacks import EarlyStopping
 
 from pytorch_lightning.loggers import TensorBoardLogger
